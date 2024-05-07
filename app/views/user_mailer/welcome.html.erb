@@ -1,0 +1,15 @@
+<!-- app/views/user_mailer/welcome.html.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+  <h1>Welcome to Our App!</h1>
+  <p>Hello <%= @user.name %></p>
+  <p>Email: <%= @user.email %></p>
+  <p>Role: <%= @user.role.name  %></p>
+  <p>Status: <%= @user.status %></p>
+  <p>Thank you for signing up with our app. We're excited to have you on board!</p>
+</body>
+</html>
