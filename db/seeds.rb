@@ -10,3 +10,15 @@
 AdminUser.create(email: 'admin@example.com', password: 'password', password_confirmation: 'password') 
 
 Role.create(name: "user")
+
+
+{
+    "user": {
+        "name": "user3",
+        "email": "user3@gmail.com",
+        "role_id": 1,
+        "status": "pending",
+        "password": "123456"
+
+    }
+}

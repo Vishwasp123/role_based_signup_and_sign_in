@@ -28,3 +28,6 @@ https://medium.com/@abeltsew/securing-your-rails-project-with-jwt-authentication
 and active admin doc:- 
 https://blog.dennisokeeffe.com/blog/2022-03-12-active-admin-with-ruby-on-rails-7
 
+rspec is add 
+https://dev.to/adrianvalenz/setup-rspec-on-a-fresh-rails-7-project-5gp
+
