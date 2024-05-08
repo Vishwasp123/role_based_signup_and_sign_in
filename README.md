@@ -22,3 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+follow doc of signup and signin:-
+https://medium.com/@abeltsew/securing-your-rails-project-with-jwt-authentication-a-comprehensive-walkthrough-39ee80a4821e
+
+and active admin doc:- 
+https://blog.dennisokeeffe.com/blog/2022-03-12-active-admin-with-ruby-on-rails-7
+
