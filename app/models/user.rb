@@ -1,9 +1,11 @@
 class User < ApplicationRecord
 	has_secure_password
+	validates :name, presence: true
+	
 	belongs_to :role
 
 	after_create :sending_create_email
-	after_update :sending_update_email
+	after_update :sending_update_email 
 
 	enum status: {pending: 'Pending', approval: 'Approval'}
 
@@ -20,8 +22,8 @@ class User < ApplicationRecord
 	end
 
 	def sending_update_email
-		UserMailer.approve(self).deliver_now
+		if  status == 'approval'
+			UserMailer.approve(self).deliver_now
+		end
 	end
-
-
 end

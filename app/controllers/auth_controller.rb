@@ -5,11 +5,11 @@ class AuthController < ApplicationController
     @user = User.find_by(email: params[:email])
 
     if @user && @user.authenticate(params[:password])
-      if @user.status == "approve"
+      if @user.status == "approval"
         token = JWT.encode({ user_id: @user.id }, Rails.application.secrets.secret_key_base, 'HS256')
 
         render json: { token: token, user_email: @user.email }
-      else
+        else
         render json: { messages: "Your request has not been approved yet" }
       end
     else

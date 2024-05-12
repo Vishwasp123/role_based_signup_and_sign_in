@@ -4,9 +4,8 @@ class UsersController < ApplicationController
   before_action :authenticate_user, except: [:create]
 
   def index
-    @users = User.all
-
-    render json: @users
+    @users = User.all 
+    render json: @users 
   end
 
 
@@ -19,13 +18,9 @@ class UsersController < ApplicationController
     end
   end
 
-
-
-
   private
 
   def user_params
     params.require(:user).permit(:name, :email, :role_id, :password, :status)
   end
-
 end
